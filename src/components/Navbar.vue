@@ -1,0 +1,55 @@
+<template>
+  <nav>
+    <div class="logo">
+      <img src="../assets/logo.png" />
+    </div>
+    <div class="right-panel">
+      <div><router-link to="/">Home</router-link></div>
+      <div><router-link to="/projects">Projects</router-link></div>
+      <div><router-link to="/contact">Contact</router-link></div>
+    </div>
+  </nav>
+</template>
+
+<script lang="ts">
+export default {
+  name: "Navbar",
+};
+</script>
+
+<style>
+nav {
+  height: 15vh;
+  background-color: #1e293b;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+nav .logo {
+  margin: 1%;
+  height: 100px;
+}
+nav .right-panel a {
+  text-decoration: none;
+  color: inherit;
+}
+nav .right-panel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  width: auto;
+  color: #666781;
+  font-weight: 500;
+  font-family: "Inter";
+  text-transform: uppercase;
+}
+nav .right-panel div {
+  width: auto;
+  margin-left: 6%;
+}
+nav .right-panel div:hover {
+  color: #c1d5f6;
+}
+</style>
