@@ -41,5 +41,5 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
-            sudo docker pull xnykram/portfolio:prod
+            docker pull xnykram/portfolio:prod
             cd portfolio && sudo docker compose up -d
