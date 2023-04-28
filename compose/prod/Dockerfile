@@ -1,19 +1,23 @@
 # front-end
-FROM node:19 AS builder
+FROM node:lts-alpine as build-stage
 
 WORKDIR /app
 
+COPY package*.json ./
+
+RUN npm install
+
 COPY . .
 
-RUN yarn install && yarn build
+RUN npm run build
 
 #nginx
-FROM nginx:alpine
+FROM nginx:stable-alpine as production-stage
 
-WORKDIR /usr/share/nginx/html
+COPY compose/prod/nginx.conf /etc/nginx/conf.d/default.conf
 
-RUN rm -rf ./*
+COPY --from=build-stage /app/dist /usr/share/nginx/html
 
-COPY --from=builder /app/dist .
+EXPOSE 80
 
-ENTRYPOINT ["nginx", "-g", "daemon off;"]
+CMD ["nginx", "-g", "daemon off;"]

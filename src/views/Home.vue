@@ -16,7 +16,7 @@
 </template>
 
 <script lang="ts"></script>
-<style scoped>
+<style>
 .container {
   background-color: #1e293b;
   font-family: "Inter";

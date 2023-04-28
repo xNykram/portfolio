@@ -1,4 +1,4 @@
-version: '3.8'
+version: "3.8"
 services:
   web:
     container_name: portfolio
@@ -7,6 +7,4 @@ services:
       context: .
       dockerfile: compose/prod/Dockerfile
     ports:
-      - 8080:80
-    volumes:
-      - /node_modules:/app/node_modules
+      - 80:80
