@@ -13,8 +13,8 @@ export default createRouter({
       component: () => import("@/views/Projects.vue"),
     },
     {
-      path: "/contact",
-      component: () => import("@/views/Contact.vue"),
+      path: "/resume",
+      component: () => import("@/views/Resume.vue"),
     },
   ],
 });

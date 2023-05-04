@@ -5,8 +5,8 @@
     </div>
     <div class="right-panel">
       <div><router-link to="/">Home</router-link></div>
+      <div><router-link to="/resume">Resume</router-link></div>
       <div><router-link to="/projects">Projects</router-link></div>
-      <div><router-link to="/contact">Contact</router-link></div>
     </div>
   </nav>
 </template>
@@ -17,7 +17,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 nav {
   height: 15vh;
   background-color: #1e293b;
@@ -25,15 +25,15 @@ nav {
   justify-content: space-around;
   flex-direction: row;
 }
-nav .logo {
+.logo {
   margin: 1%;
   height: 100px;
 }
-nav .right-panel a {
+.right-panel a {
   text-decoration: none;
   color: inherit;
 }
-nav .right-panel {
+.right-panel {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -45,11 +45,11 @@ nav .right-panel {
   font-family: "Inter";
   text-transform: uppercase;
 }
-nav .right-panel div {
+.right-panel div {
   width: auto;
-  margin-left: 6%;
+  margin-left: 5vh;
 }
-nav .right-panel div:hover {
+.right-panel div:hover {
   color: #c1d5f6;
 }
 </style>

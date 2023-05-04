@@ -33,4 +33,27 @@ a {
   margin: 0;
   padding: 0;
 }
+
+.container {
+  background-color: #1e293b;
+  font-family: "Inter";
+  font-weight: 400;
+  height: 85vh;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+}
+h1 {
+  color: #c1d5f6;
+  font-size: 48px;
+  width: 60%;
+}
+h1 span {
+  color: #60a5fa;
+}
 </style>

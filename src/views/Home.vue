@@ -16,53 +16,22 @@
 </template>
 
 <script lang="ts"></script>
-<style>
-.container {
-  background-color: #1e293b;
-  font-family: "Inter";
-  font-weight: 400;
-  height: 85vh;
-}
-
-.main-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 60%;
-}
-.main-container .title-desc-container {
+<style scoped>
+.title-desc-container {
   text-align: left;
   color: #c1d5f6;
   font-size: 20px;
   line-height: 30px;
   width: 60%;
 }
-
-.main-container .title-desc-container a {
+.title-desc-container span {
+  color: #60a5fa;
+}
+.title-desc-container a {
   background-color: #2b486a;
   color: #c1d5f6;
   border-radius: 5px;
   padding: 0.25%;
   text-decoration: none;
-}
-
-.main-container .title-desc-container span {
-  color: #60a5fa;
-}
-
-.main-container h1 {
-  color: #c1d5f6;
-  font-size: 48px;
-  width: 60%;
-}
-
-.main-container h1 span {
-  color: #60a5fa;
-}
-
-.main-container h1 {
-  margin-bottom: 1%;
-  margin-top: 1%;
 }
 </style>
