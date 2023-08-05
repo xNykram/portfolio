@@ -1,10 +1,8 @@
 <template>
-  <div @mousewheel.prevent @keydown.prevent>
     <Navbar />
     <main>
       <router-view />
     </main>
-  </div>
 </template>
 
 <script lang="ts">
@@ -28,17 +26,20 @@ a {
   text-decoration: none;
   color: inherit;
 }
-
+html,body {
+  background-color: #1e293b;
+}
 * {
   margin: 0;
   padding: 0;
 }
+h1 {
+  margin-bottom: 1.5%;
 
+}
 .container {
-  background-color: #1e293b;
   font-family: "Inter";
   font-weight: 400;
-  height: 85vh;
 }
 
 .main-container {
@@ -47,6 +48,7 @@ a {
   justify-content: center;
   align-items: center;
   height: 60%;
+
 }
 h1 {
   color: #c1d5f6;

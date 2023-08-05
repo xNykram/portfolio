@@ -34,10 +34,8 @@ export default {
 <style scoped>
 .resume-box {
   display: flex;
-  margin-top: 1.5%;
   flex-direction: column;
   width: 60%;
-  min-height: 20%;
   justify-content: flex-start; 
   align-items: flex-start; 
 }
@@ -68,10 +66,6 @@ export default {
   top: 0;
   left: 0;
   opacity: 0.5; 
-}
-
-.resume-min-box {
-  width: 20%;
 }
 
 a {

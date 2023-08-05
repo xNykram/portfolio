@@ -1,4 +1,5 @@
 <template>
+
   <div class="container">
     <div class="main-container">
       <h1><span>W</span>elcome</h1>
@@ -13,10 +14,34 @@
       </div>
     </div>
   </div>
+  <div id="particles">
+    <vue-particles color="#c1d5f6" linesColor="#c1d5f6"></vue-particles>
+  </div>
 </template>
 
 <script lang="ts"></script>
 <style scoped>
+.container {
+  position: relative;
+  z-index: 1;
+  height: 80vh;
+}
+
+#particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+#particles-js{
+  height: 90%;
+}
+.main-container {
+  position: relative; 
+}
+
 .title-desc-container {
   text-align: left;
   color: #c1d5f6;
@@ -24,9 +49,11 @@
   line-height: 30px;
   width: 60%;
 }
+
 .title-desc-container span {
   color: #60a5fa;
 }
+
 .title-desc-container a {
   background-color: #2b486a;
   color: #c1d5f6;

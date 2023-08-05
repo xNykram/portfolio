@@ -26,10 +26,11 @@ export default {
 <style scoped>
 nav {
   height: 15vh;
-  background-color: #1e293b;
   display: flex;
   justify-content: space-around;
   flex-direction: row;
+  position: relative;
+  z-index: 1;
 }
 .logo {
   margin: 1%;
