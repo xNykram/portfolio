@@ -4,7 +4,7 @@
       <h1><span>P</span>rojects</h1>
       <div class="project-section">
         <div class="project-box">
-          <div class="project-title">music_bot</div>
+          <div class="project-title">rhenus_bot</div>
           <div class="project-description">
             small application for discord that plays audio from a specific
             website at the user's request.<br />python, discord.py
@@ -18,7 +18,7 @@
         <div class="project-box">
           <div class="project-title">smite_motd</div>
           <div class="project-description">
-            a web application that provides information about Smite game.<br />python,
+            a web application that provides information about the Smite game.<br />python,
             django
           </div>
           <div class="project-button">

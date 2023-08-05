@@ -3,7 +3,7 @@
     <div class="main-container">
       <h1><span>W</span>elcome</h1>
       <div class="title-desc-container">
-        My name is <span>Patryk</span>, I am Junior Python Developer passionate
+        My name is <span>Patryk</span>, I am a Software Developer passionate
         about work automation, love coding. <br />
         Working with my hands to make magic happen on the internet. <br />
         <br />
