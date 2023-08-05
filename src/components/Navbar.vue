@@ -14,8 +14,12 @@
 </template>
 
 <script lang="ts">
+import {OhVueIcon} from "oh-vue-icons";
 export default {
-  name: "Navbar"
+  name: "Navbar",
+  components: {
+    "v-icon": OhVueIcon
+  }
 };
 </script>
 
@@ -54,4 +58,5 @@ nav {
 .right-panel div:hover {
   color: #c1d5f6;
 }
+
 </style>

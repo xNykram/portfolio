@@ -2,9 +2,8 @@ version: "3.8"
 services:
   web:
     container_name: portfolio
-    image: xnykram/portfolio:prod
     build:
       context: .
       dockerfile: compose/prod/Dockerfile
     ports:
-      - 80:80
+      - 8000:80
