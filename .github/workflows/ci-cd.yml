@@ -26,7 +26,7 @@ jobs:
           context: .
           file: compose/prod/Dockerfile
           push: true
-          tags: xnykram/portfolio:prod
+          tags: websoftdevs/portfolio:prod
 
   deploy:
     name: deploy
