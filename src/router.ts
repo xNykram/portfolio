@@ -16,5 +16,9 @@ export default createRouter({
       path: "/resume",
       component: () => import("@/views/Resume.vue"),
     },
+    {
+      path: "/contact",
+      component: () => import("@/views/Contact.vue"),
+    }
   ],
 });

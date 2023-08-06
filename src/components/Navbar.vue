@@ -7,19 +7,29 @@
       <div><router-link to="/">Home</router-link></div>
       <div><router-link to="/resume">Resume</router-link></div>
       <div><router-link to="/projects">Projects</router-link></div>
-      <div><a target="_blank" href="https://github.com/xNykram"><v-icon scale="1.2" name="bi-github" /></a></div>
-      <div><a target="_blank" href="https://www.linkedin.com/in/nykram/"><v-icon scale="1.2" name="bi-linkedin" /></a></div>
+      <div><router-link to="/contact">Contact</router-link></div>
+
+      <div>
+        <a target="_blank" href="https://github.com/xNykram"
+          ><v-icon scale="1.2" name="bi-github"
+        /></a>
+      </div>
+      <div>
+        <a target="_blank" href="https://www.linkedin.com/in/nykram/"
+          ><v-icon scale="1.2" name="bi-linkedin"
+        /></a>
+      </div>
     </div>
   </nav>
 </template>
 
 <script lang="ts">
-import {OhVueIcon} from "oh-vue-icons";
+import { OhVueIcon } from "oh-vue-icons";
 export default {
   name: "Navbar",
   components: {
-    "v-icon": OhVueIcon
-  }
+    "v-icon": OhVueIcon,
+  },
 };
 </script>
 
@@ -59,5 +69,4 @@ nav {
 .right-panel div:hover {
   color: #c1d5f6;
 }
-
 </style>

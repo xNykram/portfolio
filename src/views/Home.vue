@@ -36,7 +36,7 @@
   z-index: 0;
 }
 #particles-js{
-  height: 90%;
+  height: 99%;
 }
 .main-container {
   position: relative; 

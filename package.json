@@ -7,17 +7,21 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "@braid/vue-formulate": "^2.5.3",
+    "@formkit/vue": "^0.18.0-23c4d8f",
     "core-js": "^3.8.3",
     "oh-vue-icons": "^1.0.0-rc3",
+    "or": "^0.2.0",
     "pdfvuer": "^2.0.1",
+    "vee-validate": "^4.11.1",
     "vue": "^3.3.4",
     "vue-class-component": "^8.0.0-0",
     "vue-particles": "^1.0.9",
     "vue-pdf": "^4.3.0",
     "vue-pdf-embed": "^1.1.6",
-    "vue-property-decorator": "^8.5.1",
     "vue-router": "^4.0.3",
-    "vue3-particles": "^2.9.3"
+    "vue3-particles": "^2.9.3",
+    "vuetify": "^3.3.11"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~5.0.0",
