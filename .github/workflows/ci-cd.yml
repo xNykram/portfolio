@@ -26,7 +26,7 @@ jobs:
           context: .
           file: compose/prod/Dockerfile
           push: true
-          platform: linux/arm64v8
+          platform: linux/arm64
           tags: websoftdevs/portfolio:prod
 
   deploy:
