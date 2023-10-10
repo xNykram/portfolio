@@ -10,7 +10,7 @@ COPY . .
 
 RUN npm run build
 
-FROM nginx:1.21 as production-stage
+FROM nginx:1.25.2 as production-stage
 
 COPY --from=build-stage /app/dist /usr/share/nginx/html
 
