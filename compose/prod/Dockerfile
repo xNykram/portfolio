@@ -1,4 +1,4 @@
-FROM arm64v8/node:20-alpine as build-stage
+FROM node:20-alpine as build-stage
 
 WORKDIR /app
 
@@ -10,7 +10,7 @@ COPY . .
 
 RUN npm run build
 
-FROM arm64v8/nginx:1.25.2 as production-stage
+FROM nginx:1.25.2 as production-stage
 
 COPY --from=build-stage /app/dist /usr/share/nginx/html
 
